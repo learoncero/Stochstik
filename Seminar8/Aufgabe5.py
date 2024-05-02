@@ -34,10 +34,10 @@ p_greater_25 = 1 - norm.cdf(25, mu, sigma)
 print(p_greater_25)
 
 # e) P(X >= 25|X >= 20)
-p_between_25_and_20 = p_greater_25 - p_less_20
-p_25_given_20 = p_between_25_and_20 / (1 - p_less_20)
+p_greater_20 = 1 - norm.cdf(20, mu, sigma)
+p_25_given_20 = p_greater_25/p_greater_20
 print(p_25_given_20)
 
 # f) P(X >= 20|X >= 25)
-p_20_given_25 = p_less_20 / p_greater_25
+p_20_given_25 = p_greater_25 / p_greater_25
 print(p_20_given_25)
