@@ -10,7 +10,7 @@ t_value = (mean - mu_0) / (s / np.sqrt(n))
 
 alpha_05 = 0.05
 
-t_critical_05 = t.ppf(alpha_05, n - 1)
+t_critical_05 = t.ppf(1-alpha_05, n - 1)
 
 print(f"t_value: {t_value}")    
 print(f"t_critical_05: {t_critical_05}")
