@@ -1,4 +1,5 @@
 from scipy.stats import expon
+from math import e
 
 # a)
 erwartungswert = 10000
