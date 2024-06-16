@@ -21,6 +21,17 @@ mean = statistics.mean(values)
 s2 = statistics.variance(values)
 s = math.sqrt(s2)
 
+# Aufgabe 5
+mu = 9
+sigma = 0.707
+
+z_value = (10 - mu) / sigma
+
+# Berechnung der Wahrscheinlichkeit P(Z > z_value)
+# P(Z > z_value) = 1 - P(Z <= z_value)
+probability = 1 - norm.cdf(z_value)
+print(f"5) probability: ", probability)
+
 # Aufgabe 6
 print(f"6) mean: ", mean) 
 print(f"6) s2: ", s2) 
