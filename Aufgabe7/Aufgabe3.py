@@ -3,10 +3,10 @@ from scipy.stats import poisson
 # Poisson distribution
 
 # a)
-lambda_val = 3
-x = 3
+lambda_val = 1000
+x = 500
 
-result = 1 - poisson.cdf(x, lambda_val)
+result = poisson.cdf(x, lambda_val)
 print("a) ", result)
 
 
